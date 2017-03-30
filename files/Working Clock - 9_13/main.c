@@ -9,27 +9,27 @@
 #include "alarm.h"
 #include <stdio.h>
 
-/* Pin Setup-PIC18F458
-MCLR			RB7-Programmer
-RA0-LED			RB6-Programmer
-RA1-Screen-Reset	RB5-Screen-E
-RA2-Not Used		RB4-Screen-R\W
-RA3-RTC-RST		RB3-Screen-RS
-RA4-RTC-DATA		RB2-Button-Update
-RA5-RTC-CLOCK		RB1-Screen-CS1
-RE0-Not Used		RB0-Screen-CS2
-RE1-Not Used		V+
-RE2-Not Used		V-
-V+			RD7-WWVB input
-V-			RD6-Not Used
-OSC1-RC Circuit		RD5-Sound Output
-OSC2-^with 4 or 10mhz	RD4-Button-A_DAY
-RC0-Screen-DB0		RC7-Screen-DB7
-RC1-Screen-DB1		RC6-Screen-DB6
-RC2-Screen-DB2		RC5-Screen-DB5
-RC3-Screen-DB3		RC4-Screen-DB4
-RD0-Button-A_UP		RD3-Button-A_HR
-RD1-Button-A_DOWN	RD2-Button-A_MIN
+/* Pin Setup-PIC18F458						LCD pin layout
+MCLR			RB7-Programmer				Pin1(Square)-VDD - Power for logic and LCD +
+RA0-LED			RB6-Programmer				Pin2-VSS - Ground
+RA1-Screen-Reset	RB5-Screen-E				Pin3-V0 - Operating Voltage for LCD (Variable)
+RA2-Not Used		RB4-Screen-R\W				Pin4-DB0
+RA3-RTC-RST		RB3-Screen-RS				Pin5-DB1
+RA4-RTC-DATA		RB2-Button-Update			Pin6-DB2
+RA5-RTC-CLOCK		RB1-Screen-CS1				Pin7-DB3
+RE0-Not Used		RB0-Screen-CS2				Pin8-DB4
+RE1-Not Used		V+					Pin9-DB5
+RE2-Not Used		V-					Pin10-DB6
+V+			RD7-WWVB input				Pin11-DB7
+V-			RD6-Not Used				Pin12-CS2
+OSC1-RC Circuit		RD5-Sound Output			Pin13-CS1
+OSC2-^with 4 or 10mhz	RD4-Button-A_DAY			Pin14-/RES (Reset)
+RC0-Screen-DB0		RC7-Screen-DB7				Pin15-R/W  (Read\Write)
+RC1-Screen-DB1		RC6-Screen-DB6				Pin16-D/I  (RS Data/instruction)
+RC2-Screen-DB2		RC5-Screen-DB5				Pin17-E    (Enable)
+RC3-Screen-DB3		RC4-Screen-DB4				Pin18-VEE - Operating Voltage for LCD (Variable)
+RD0-Button-A_UP		RD3-Button-A_HR				Pin19-A Backlight +
+RD1-Button-A_DOWN	RD2-Button-A_MIN			Pin20-K Backlight -
 */
 
 // Prototypes
