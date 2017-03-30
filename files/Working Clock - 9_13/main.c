@@ -457,6 +457,9 @@ void interrupt GlobalInt(void)
     }
 }
 
+
+
+//Lock Screen for Alarm settings
 void Pinlock(void)
 {
  Vdelay_ms(500);
@@ -524,7 +527,7 @@ while(700)
   if(A_DAY_ON)
 	{
 	 if(PinA==48)												//48 equals 0
-		{														//57 equals 9	
+		{												//57 equals 9	
 		 if(PinB==48)											//pincode is set to 9037
 			{
 			 if(PinC==48)
