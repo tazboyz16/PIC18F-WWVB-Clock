@@ -23,7 +23,7 @@
 #define A_UP         RD0                        //Menu Select UP
 #define A_DOWN       RD1                        //Menu Select Down
 #define A_HR         RD3                        //HR Increase
-#define A_MIN         RD2                        //Min Increase
+#define A_MIN        RD2                        //Min Increase
 #define A_DAY        RD4                        //Day Increase
 
 #define ASONG        LATD5                        //Alarm Output
@@ -31,7 +31,7 @@
 #define A_UP_ON			(!A_UP)				//  ON is when Button is Pressed down
 #define A_UP_OFF		(A_UP)
 #define A_DOWN_ON		(!A_DOWN)
-#define A_DOWN_OFF		(A_DOWN)
+#define A_DOWN_OFF	(A_DOWN)
 #define A_HR_ON			(!A_HR)
 #define A_HR_OFF		(A_HR)
 #define A_MIN_ON		(!A_MIN)
