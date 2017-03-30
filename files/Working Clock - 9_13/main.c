@@ -9,6 +9,26 @@
 #include "alarm.h"
 #include <stdio.h>
 
+/* Pin Setup-PIC18F458
+MCLR			RB7-Programmer
+RA0-LED			RB6-Programmer
+RA1-Screen-Reset	RB5-Screen-E
+RA2-Not Used		RB4-Screen-R\W
+RA3-RTC-RST		RB3-Screen-RS
+RA4-RTC-DATA		RB2-Button-Update
+RA5-RTC-CLOCK		RB1-Screen-CS1
+RE0-Not Used		RB0-Screen-CS2
+RE1-Not Used		V+
+RE2-Not Used		V-
+V+			RD7-WWVB input
+V-			RD6-Not Used
+OSC1-RC Circuit		RD5-Sound Output
+OSC2-^with 4 or 10mhz	RD4-Button-A_Day
+RC0-Screen-DB0		RC7-Screen-DB7
+RC1-Screen-DB1		RC6-Screen-DB6
+RC2-Screen-DB2		RC5-Screen-DB5
+RC3-Screen-DB3		RC4-Screen-DB4
+*/
 
 // Prototypes
 void DisplayTime(TIMESTRUCT *ptt, UINT8 yAll);
@@ -18,6 +38,7 @@ void interrupt GlobalInt(void);
 void ButtonDown(void);
 void DrawTZSetting(UINT8 yTZ);
 
+//Alarm Programs I have added
 void Pinlock(void);
 void Pincheck(void);
 void Sound(void);
@@ -35,6 +56,8 @@ volatile UINT8 g_yTimedOut;                             // 1=time out occured
 
 
 // Constants
+// Constants are setup as [row]{columns]
+
 const UINT8 cszDay[7][11] ={"Monday", "Tuesday", "Wednesday", "Thursday",
                             "Friday", "Saturday", "Sunday" };
 
