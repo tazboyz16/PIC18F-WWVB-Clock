@@ -35,14 +35,14 @@ void rtcInit(void)
         rtcWriteRam( RAM_W_SIG, RTC_SIGNATURE);     // write signature
         rtcWriteRam( RAM_W_TZONE, TZ_ET);           // default is Eastern Time
 
-        // default time is Friday, January 1, 2010
+        // default time is Sunday January 1, 2017
         tt.sec=  0x00;                              // 0x00 - 0x59
         tt.min=  0x00;                              // 0x00 - 0x59
         tt.hr=   0x00;                              // 0x00 - 0x23
         tt.date= 0x01;                              // 0x01 - 0x31
         tt.month=0x01;                              // 0x01 - 0x12
-        tt.day=  0x05;                              // 1-7 (1=Monday)
-        tt.year= 0x10;                              // 2000 + value
+        tt.day=  0x07;                              // 1-7 (1=Monday)
+        tt.year= 0x17;                              // 2000 + value
         rtcWriteRam(RAM_W_DST, 0x00);               // Standard Time
         rtcSetClock(&tt);
         rtcSaveLastSync(&tt, 0);                    // default last sync time
