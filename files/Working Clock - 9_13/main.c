@@ -23,11 +23,13 @@ RE2-Not Used		V-
 V+			RD7-WWVB input
 V-			RD6-Not Used
 OSC1-RC Circuit		RD5-Sound Output
-OSC2-^with 4 or 10mhz	RD4-Button-A_Day
+OSC2-^with 4 or 10mhz	RD4-Button-A_DAY
 RC0-Screen-DB0		RC7-Screen-DB7
 RC1-Screen-DB1		RC6-Screen-DB6
 RC2-Screen-DB2		RC5-Screen-DB5
 RC3-Screen-DB3		RC4-Screen-DB4
+RD0-Button-A_UP		RD3-Button-A_HR
+RD1-Button-A_DOWN	RD2-Button-A_MIN
 */
 
 // Prototypes
