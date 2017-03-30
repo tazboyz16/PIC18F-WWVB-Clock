@@ -22,8 +22,8 @@
 /* Define Ports */
 #define A_UP         RD0                        //Menu Select UP
 #define A_DOWN       RD1                        //Menu Select Down
-#define A_HR         RD3                        //HR Increase
 #define A_MIN        RD2                        //Min Increase
+#define A_HR         RD3                        //HR Increase
 #define A_DAY        RD4                        //Day Increase
 
 #define ASONG        LATD5                        //Alarm Output
