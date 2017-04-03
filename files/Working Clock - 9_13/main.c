@@ -27,7 +27,7 @@ OSC2-^with 4 or 10mhz	RD4-Button-A_DAY			Pin14-/RES (Reset)
 RC0-Screen-DB0		RC7-Screen-DB7				Pin15-R/W  (Read\Write)
 RC1-Screen-DB1		RC6-Screen-DB6				Pin16-D/I  (RS Data/instruction)
 RC2-Screen-DB2		RC5-Screen-DB5				Pin17-E    (Enable)
-RC3-Screen-DB3		RC4-Screen-DB4				Pin18-VEE - Operating Voltage for LCD (Variable)
+RC3-Screen-DB3		RC4-Screen-DB4				Pin18-VEE - Operating Neg Voltage for LCD (Variable)
 RD0-Button-A_UP		RD3-Button-A_HR				Pin19-A Backlight +
 RD1-Button-A_DOWN	RD2-Button-A_MIN			Pin20-K Backlight -
 */
