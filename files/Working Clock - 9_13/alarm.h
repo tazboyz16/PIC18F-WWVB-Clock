@@ -77,6 +77,9 @@ unsigned int Alarm8DAY;
 unsigned int Alarm9DAY;
 unsigned int Alarm10DAY;
 
-
+/* this might work adding Sound notes setup
+define Note_A
+define Note_B
+*/
 
 #endif /* __ALARM_H__ */
